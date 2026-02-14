@@ -1,4 +1,12 @@
 {
   "item.practicemod.marlite": "Marlite Gem",
-  "item.practicemod.raw_marlite": "Raw Marlite"
+  "item.practicemod.raw_marlite": "Raw Marlite",
+
+  "block.practicemod.marlite_block": "Block of Marlite",
+  "block.practicemod.raw_marlite_block": "Block of Raw Marlite",
+  "block.practicemod.marlite_ore": "Marlite Ore",
+  "block.practicemod.deepslate_marlite_ore": "Deepslate Marlite Ore",
+
+  "creativetab.practicemod.marlite_items": "Marlite Items",
+  "creativetab.practicemod.marlite_blocks": "Marlite Blocks"
 }

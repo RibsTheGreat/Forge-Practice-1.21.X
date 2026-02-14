@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "practicemod:marlite_block",
+    "practicemod:raw_marlite_block",
+    "practicemod:marlite_ore",
+    "practicemod:deepslate_marlite_ore"
+  ]
+}

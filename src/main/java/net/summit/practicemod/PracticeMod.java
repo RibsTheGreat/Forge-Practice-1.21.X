@@ -14,6 +14,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.summit.practicemod.block.ModBlocks;
+import net.summit.practicemod.item.ModCreativeModeTabs;
 import net.summit.practicemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -33,6 +35,8 @@ public class PracticeMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -49,6 +53,10 @@ public class PracticeMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.MARLITE);
             event.accept(ModItems.RAW_MARLITE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept((ModBlocks.MARLITE_BLOCK));
+            event.accept((ModBlocks.RAW_MARLITE_BLOCK));
         }
     }
 
